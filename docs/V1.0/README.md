@@ -1,7 +1,11 @@
 # Nook-Ink
 Proyecto Final de Programación Multimedia y Dispositivos Móviles (DAM): desarrollo de una aplicación Android de biblioteca personal interactiva con Kotlin y Jetpack Compose.
 
-## Diseño de la aplicación
+## Prototipo de pantallas
+
+![Prototipos de las pantallas de Nook Ink](https://github.com/LyPaw/Nook-Ink/blob/6e2778b566f822d937bbc6b9a64845644c4e9344/docs/V1.0/prototipos/pantallas.png)
+
+## Diagrama de Flujo
 
 ```mermaid
 flowchart TB
@@ -121,7 +125,9 @@ flowchart TB
     class sesion decision;
 ```
 
-## Prototipos de la aplicación
+## Diagrama de casos
+<p align="center">
+  <img src="https://github.com/LyPaw/Nook-Ink/blob/6e2778b566f822d937bbc6b9a64845644c4e9344/docs/V1.0/diagramas/diagrama_casos.png?raw=true" alt="Diagrama de casos de uso" width="400">
+</p>
 
-![Prototipos de las pantallas de Nook Ink](https://github.com/LyPaw/Nook-Ink/blob/9e1bf0881d0db0087461379047d5ab922a288fd9/docs/V1.0/prototipos/pantallas.png?raw=true)
 
