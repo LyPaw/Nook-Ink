@@ -1,6 +1,18 @@
 # Nook-Ink
 Proyecto Final de Programación Multimedia y Dispositivos Móviles (DAM): desarrollo de una aplicación Android de biblioteca personal interactiva con Kotlin y Jetpack Compose.
 
+## Documentación
+
+<p align="center">
+  <a href="Nook%20%26%20Ink.pdf">
+    <img src="portada.png" width="300" alt="Portada de Nook & Ink">
+  </a>
+</p>
+
+<p align="center">
+  <a href="Nook%20%26%20Ink.pdf">📄 Ver documento completo (PDF)</a>
+</p>
+
 ## Prototipo de pantallas
 
 ![Prototipos de las pantallas de Nook Ink](https://github.com/LyPaw/Nook-Ink/blob/6e2778b566f822d937bbc6b9a64845644c4e9344/docs/V1.0/prototipos/pantallas.png)
