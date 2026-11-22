@@ -1,11 +1,12 @@
-package com.example.nookink
+package com.example.nookink.data
 
 import androidx.compose.ui.graphics.Color
 import com.example.nookink.model.Libro
 
 // Dieciocho libros de ejemplo. Los datos son: id, título, título del lomo,
 // descripción, color del lomo y valoración. El resto (altura, imagen...) lo rellena Libro.
-val listaDeLibros = listOf(
+// Le he cambiado el nombre a librosIniciales
+val librosIniciales = listOf(
     Libro("1", "Don Quijote de la Mancha", "Quijote",
         "Un hidalgo enloquece leyendo novelas de caballerías y sale a recorrer La Mancha como caballero andante.", Color(0xFF8E3B2F), 4.6),
     Libro("2", "Cien años de soledad", "Cien años",
@@ -39,35 +40,5 @@ val listaDeLibros = listOf(
     Libro("16", "El nombre de la rosa", "La rosa",
         "Un monje franciscano investiga unas muertes misteriosas en una abadía medieval.", Color(0xFF86334D), 4.4),
     Libro("17", "Rebelión en la granja", "Rebelión",
-        "Los animales de una granja expulsan al granjero y crean un sistema que acaba corrompiéndose.", Color(0xFF5E4B8B), 4.3),
-    Libro("18", "El Hobbit", "Hobbit",
-        "Bilbo Bolsón se une a un grupo de enanos para recuperar un tesoro custodiado por un dragón.", Color(0xFF4B6E2E), 4.7)
+        "Los animales de una granja expulsan al granjero y crean un sistema que acaba corrompiéndose.", Color(0xFF5E4B8B), 4.3)
 )
-
-// Reparte los libros en baldas automáticamente: la primera lleva 6, la segunda 3,
-// la tercera 6, la cuarta 3...
-private fun crearBaldas(libros: List<Libro>): List<List<Libro>> {
-
-    val baldas = mutableListOf<List<Libro>>()
-    var baldaActual = mutableListOf<Libro>()
-    var capacidad = 6
-
-    // Recorremos todos los libros.
-    libros.forEach { libro ->
-        baldaActual.add(libro)
-
-        // Si la balda se ha llenado, la guardamos y empezamos una nueva.
-        if (baldaActual.size == capacidad) {
-            baldas.add(baldaActual)
-            baldaActual = mutableListOf()
-            capacidad = if (capacidad == 6) 3 else 6
-        }
-    }
-
-    // Si quedan libros sueltos en una balda a medias, la guardamos también.
-    if (baldaActual.isNotEmpty()) baldas.add(baldaActual)
-
-    return baldas
-}
-
-val listaDeBaldas = crearBaldas(listaDeLibros)
